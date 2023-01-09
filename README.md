@@ -170,6 +170,8 @@ git remote add origin <URL>
 git remote -v
 <img src="./image/gitwork005.png" alt="Github画面" width="50%">
 
-
+一括登録
+git add.
+git commit
 
 
