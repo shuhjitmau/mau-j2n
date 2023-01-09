@@ -50,33 +50,35 @@ Gitにユーザー名とメールアドレスを設定することで、コミ�
 
 ``git config user.email``
 
-# ｇitの使用準備
+## ｇitの使用準備
 ターミナルからGitで管理するディレクトリを作成し、ディレクトリに移動する。
 
 ``mkdir mau-j2n``  
 
 ``cd mau-j2n``
 
-そのフォルダをGitで管理できるように、以下のコマンドを実行します。
-git init
+そのフォルダをGitで管理できるように、以下のコマンドを実行。
 
-下記のような実行結果が出る。
+``git init``
+
+問題がなかった場合、下記のような実行結果が出る。
+
 <img src="./image/gitwork001.png" alt="Github画面" width="50%">
 
-現在のブランチ名をmainに変更します。 以下のコマンドを実行すると、ブランチ名を変更することができます。
-git branch -M main
+現在のブランチ名をmainに変更するため、コマンドを実行。
+``git branch -M main``
 
-自分のPCでファイルを作成することができたら、GitHubの作成したリポジトリ画面を開いてください。 「HTTPS/SSH」と書かれたボタンの「SSH」を押してください。 git@github.comから始まる1行をコピーしてください。 (下の画像の右にあるボタンをクリックすると簡単にコピーできます。)
+GitHubの作成したリポジトリ画面を開き、「HTTPS/SSH」と書かれたボタンの「SSH」を押し、”git@github.com:shuhjitmau/mau-j2n.git”をコピーする。
+
 <img src="./image/gitwork002.png" alt="Github画面" width="50%">
 
-自分のPCでファイルを作成することができたら、GitHubの作成したリポジトリ画面を開いてください。
-「Code」の中のSSHを選択し、URLをコピーする。
+（リポジトリ画面の「Code」の中のSSHを選択しても良い）
+
 <img src="./image/gitwork003.png" alt="Github画面" width="50%">
 
-コピーできたら、以下の<URL> の部分をコピーしたものに置き換えて、ターミナルで実行してください。 以下のコマンドを実行すると、プッシュ先のリモートリポジトリを指定することができます。
-git remote add origin <URL>
+コピー後、以下のコマンドをターミナルで実行しpush先のリモートリポジトリを指定する。
 
-
+``git remote add origin git@github.com:shuhjitmau/mau-j2n.git``
 
 リモートリポジトリを設定する
 リモートリポジトリが登録できたか確認してみましょう。 以下コマンドを実行すると、登録されているリモートリポジトリを確認することができます。
