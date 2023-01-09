@@ -122,7 +122,7 @@ Markdownはシンプルな記法で文章に装飾を反映させると同時に
 
 
 
-#　GitHubアカウントの作成
+# GitHubアカウントの作成
 
 <img src="./image/github001.png" alt="Github画面" width="50%">
 
@@ -137,7 +137,7 @@ GitHubのアップデートやお知らせを受け取るかどうかに「yes�
 コードを入力。
 <img src="./image/github004.png" alt="Github画面" width="50%">
 
-##　リモートリポジトリの作成
+## リモートリポジトリの作成
 
 Githubの画面左の「Create repository」ボタンもしくは、GitHubのヘッダー右上にある「+」をクリックして表示される項目の「New repository」をクリック。
 
@@ -151,7 +151,7 @@ Githubの画面左の「Create repository」ボタンもしくは、GitHubのヘ
 リモートリポジトリの作成が完了すると、下記のページが表示される。
 <img src="./image/repository003.png" alt="Github画面" width="50%">
 
-##　GithubアカウントにSSHキーの追加
+## GithubアカウントにSSHキーの追加
 
 SSHで接続するのに必要なSSHキーを作成
 `` ssh-keygen -t ed25519 -C "GitHubに登録したメールアドレス"`` 
@@ -170,7 +170,7 @@ GitHubのヘッダー右上にあるプロフィール画像を押して、そ�
 Title欄に任意の名前をつけてください。 Key欄に先ほどコピーした内容を貼り付けてください
 
 
-##　SSH接続の確認
+## SSH接続の確認
 GitHubに接続ができるか確認をしてみましょう。
 ssh -T git@github.com
 
