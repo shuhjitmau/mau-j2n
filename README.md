@@ -273,7 +273,13 @@ README.MDの作成
 「Visual Studio Code」で、README.mdの作成を行う。
 Markdownの記法を調べながら、ドキュメントを作成。
 （参考にしたページ）
+
+
 　https://notepm.jp/help/how-to-markdown
+
+
+<a href="https://notepm.jp/help/how-to-markdown" target="_blank" rel="noopener noreferrer">Markdown記法/書き方（見出し・表・リンク・画像・文字色など）</a>
+
 
 　https://qiita.com/shizen-shin/items/a65f1e2b6a3c3a4a28e1
 
