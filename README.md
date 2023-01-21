@@ -13,11 +13,10 @@ Gitは、開発者間で記述したプログラムのソースコードの変�
 
 Git最大の特徴は「分散型」である事であり、ワーキングディレクトリに各開発者の全履歴を含んだリポジトリの完全な複製が作られオフラインでも履歴の調査や変更の記録といったほとんどの作業を行うことが可能であるため、Gitはテキストデータの変更履歴を管理することが得意な事からプログラミングによるシステム開発だけではなくWebデザインなどでも使用されている。
 
-
 # Gitインストール
 ターミナルから、下記のコマンドを実行。
 
- ``` git --version ``` 
+ ``` git --version ```
 
 以前、gitはインストールを行っていたが、実行したところ下記のエラーが表示された。
 
@@ -30,7 +29,6 @@ Git最大の特徴は「分散型」である事であり、ワーキングデ�
 インストール後、ターミナルから、下記のコマンドを実行。
 
  `` git --version `` 
-
 
 ``git version 2.37.1 (Apple Git-137.1)``
 
@@ -220,7 +218,7 @@ Githubの画面左の「Create repository」ボタンもしくは、GitHubのヘ
 
 # GithubへのREADME.mdの公開
 
-README.md公開までの作業の流れ
+## README.md公開までの作業の流れ
 
 [GitHubアカウントの作成](#GitHubアカウントの作成)　
 
@@ -268,11 +266,15 @@ GitHubの作成したリポジトリ画面を開き、「HTTPS/SSH」と書か�
 
 <img src="./image/gitwork005.png" alt="Github画面" width="50%">
 
-README.MDの作成
+## README.MDの作成
 
 「Visual Studio Code」で、README.mdの作成を行う。
+Visual Studio Codeに下記の拡張機能をインストール
+「Japanese Language Pack for Visual Studio Code」
+「Live Preview」
 
-Markdownの記法を調べながら、ドキュメントを作成。
+
+Markdownの記法を調べながら、ドキュメントを作成。作業中にキャプチャを行った画像データも埋め込む。
 
 （参考にしたページ）
 
@@ -285,12 +287,15 @@ Markdown記法 サンプル集
 https://qiita.com/tbpgr/items/989c6badefff69377da7
 
 
+## git add 〜 git push（リモートリポジトリの更新）
+``` git add . ```
 
+` git commit -m "適宜コメントを入力" `
 
+``` git push origin main```
 
-
-
-
+更新が無事行われているか、GitHubで確認。
+※Visual Studio CodeのLivePreviewでは、ページ内のリンクがジャンプしなかったため、ある程度文章の更新を行う事に、リモートリポジトリ側のREAMME.mdの更新を行い確認を行った。
 
 
 # Markdownとは
@@ -303,12 +308,4 @@ Markdown（マークダウン）は、書を記述するための軽量マーク
  - 対応アプリを使えば快適に読み書きできる
 
 などの特徴がある。
-
 Markdownはシンプルな記法で文章に装飾を反映させると同時に構造化できる事ができ、レイアウトやスタイルを意識せず、文章を考えることだけに集中する事ができる点がメリットである。例えば見出しは「# 見出し」のように「#」+「半角スペース」で書き、「#」の数で見出しを５段階で表現することができる。
-
-
-一括登録
-git add.
-git commit
-
-
