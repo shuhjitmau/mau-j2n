@@ -7,30 +7,31 @@ Gitは、開発者間で記述したプログラムのソースコードの変�
  - 編集した履歴を複数人で共有
  - オフラインでのプログラムの編集
 
-などが可能になる。  
+などが可能になる。
 
 今までのバージョン管理システムは、サーバーにあるリポジトリ内のファイルを開発者が共同で使用してたが、この場合開発者が増えた際に複数で同じファイルを編集し、先に編集した人の変更内容が消えてしまうような状況が起きる事がり、整合性を維持する事が難しかった。
 
 Git最大の特徴は「分散型」である事であり、ワーキングディレクトリに各開発者の全履歴を含んだリポジトリの完全な複製が作られオフラインでも履歴の調査や変更の記録といったほとんどの作業を行うことが可能であるため、Gitはテキストデータの変更履歴を管理することが得意な事からプログラミングによるシステム開発だけではなくWebデザインなどでも使用されている。
 
 # Gitインストール
+
 ターミナルから、下記のコマンドを実行。
 
- ``` git --version ```
+ ` git --version `
 
 以前、gitはインストールを行っていたが、実行したところ下記のエラーが表示された。
 
-``` xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun ```
+` xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun `
 
 原因を調査したところ、OSのバージョンアップを行った場合、このエラーが出ることがあるとあったので、再度「Xcode Command Line Tool」のインストールを実施。
 
-`` xcode-select --install ``
+` xcode-select --install `
 
 インストール後、ターミナルから、下記のコマンドを実行。
 
- `` git --version `` 
+` git --version `
 
-``git version 2.37.1 (Apple Git-137.1)``
+`git version 2.37.1 (Apple Git-137.1)`
 
 が表示されたので、インストールの完了を確認。
 
@@ -43,22 +44,21 @@ Git は、アイデンティティによってコミットを関連付けるた�
 
 下記のコマンドを使用し、ユーザー名の設定を行う。
 
-``git config --global user.name "shuhjitmau"``
+`git config --global user.name "shuhjitmau"`
 
 ユーザー名の設定ができたかは、下記のコマンドで確認。
 
-``git config user.name``
+`git config user.name`
 
 ## メールアドレスの設定
 
 下記のコマンドを使用し、メールアドレスの設定を行う。
 
-``git config --global user.email "メールアドレス"``
+`git config --global user.email "メールアドレス"`
 
 メールアドレスの設定ができたかは、下記のコマンドで確認。
 
-``git config user.email``
-
+`git config user.email`
 
 ## GitからGitHubで認証する
 
@@ -69,13 +69,13 @@ GitからGitHubリポジトリに接続する場合、HTTPSまたはSSHを使用
 
 SSHで接続するのに必要なSSHキーを作成。
 
-`` ssh-keygen -t ed25519 -C "GitHubに登録したメールアドレス"`` 
+` ssh-keygen -t ed25519 -C "GitHubに登録したメールアドレス"` 
 
 「Enter a file in which to save the key」というメッセージが表示されたら、Enterキーを押す。これにより、デフォルトのファイル場所が受け入れらる。 さらに「Enter passphrase(empty for no passphrase)」とパスワードの設定を求められるので入力。さらに「Enter same passprase again」とパスワードの設定した再入力を求められるので入力。
 
 SSHキーファイルに書かれた内容をコピー。
 
-`` pbcopy < ~/.ssh/SSHキーファイル名.pub`` 
+` pbcopy < ~/.ssh/SSHキーファイル名.pub`
 
 GitHubのヘッダー右上にあるプロフィール画像を押して、その中の「Settings（設定）」を押してください。
 
@@ -94,7 +94,7 @@ Title欄に任意の名前を付け、Key欄に先ほどコピーした内容を
 ### SSH接続の確認
 GitHubに接続ができるかを確認。
 
-``ssh -T git@github.com``
+`ssh -T git@github.com`
 
 下記のようにユーザー名が表示されれば接続完了。
 
@@ -108,19 +108,19 @@ Gitのinitコマンドは、「リポジトリを新規に作成」するとき�
 「.git」にはGitで使用するファイルが新規に作成される。
 また、既存のリポジトリの初期化を行いたい場合にもinitコマンドを使用する。
 
-``mkdir mau-j2n``
+`mkdir mau-j2n`
 
-``cd mau-j2n``
+`cd mau-j2n`
 
-``git init``
+`git init`
 
 とコマンドを実行することによって、「/Users/ユーザー名/」以下にディレクトリ「mau-j2c」を作成し、「.git」というリポジトリを構成するディレクトリが作成される。
 
 また、上記のコマンドは、
 
-``mkdir mau-j2n``
+`mkdir mau-j2n`
 
-``git init mau-j2n``
+`git init mau-j2n`
 
 と、ディレクトリ名を指定することで、同様の結果となる。
 
@@ -128,48 +128,46 @@ Gitのinitコマンドは、「リポジトリを新規に作成」するとき�
 
 git add は、作業ディレクトリ内の変更をステージングエリアに追加するコマンドで、個々のファイルのアップデート内容を次回コミット対象とするよう、Gitに指示する。実際には git add コマンドだけではリポジトリに何も影響しない。git commit コマンドを実行するまで、変更が実際に記録されることはない。
 
-``git add ファイル名``
+`git add ファイル名`
 
 指定したファイルに加えられた変更点が次回のコミット対象となる。
 
-``git add ディレクトリ名``
+`git add ディレクトリ名`
 
 指定したディレクトリ内に加えられた変更点が次回のコミット対象となる。
 
-``git add .``
+`git add .`
 
 カレントディレクトリ以下の、変更されたファイルや削除されたファイル、新しく作られたファイル、全てにが次回のコミット対象となる。
-
 
 ## git commit
 
 git commit は、git addで、変更対象となったファイルをGitに登録するコマンドで、git commit コマンドを実行することによって、ローカルリポジトリに変更が記録される。
 
-``git commit``
+`git commit`
 
 コミットメッセージをエディタで入力した後にcommitオブジェクトが作成される。
 
-``git commit -m "コミットメッセージ"``
+`git commit -m "コミットメッセージ"`
 
 詳細なコミットメッセージが必要でない場合、１行のコミットメッセージの入力と同時に、commitオブジェクトが作成される。
 
-``git commit -a``
+`git commit -a`
 
 編集したファイルをステージングエリアへ追加することなく、一気に直接リポジトリへコミットする。(git addが不要)ただし、新規作成したファイルについては、git add する必要がある。
 -aオプションを使用し、下記のように、１行のコミットメッセージを同時に追加する事も可能。
 
-``git commit -am "コミットメッセージ"``
+`git commit -am "コミットメッセージ"`
 
 ## git push
 
 git push は、ローカルリポジトリの変更内容をリモートリポジトリへ反映させるためのコマンドで、
 
-``git push origin ブランチ名``
+`git push origin ブランチ名`
 
 とコマンドを実行し、下記のようなメッセージが表示されればリモートリポジトリに反映されたことが確認できる。
 
 <img src="./image/gitwork007.png" alt="Github画面" width="50%">
-
 
 # GitHubとは
 
@@ -232,13 +230,13 @@ Githubの画面左の「Create repository」ボタンもしくは、GitHubのヘ
 
 ターミナルからGitで管理するディレクトリを作成し、ディレクトリに移動する。
 
-``mkdir mau-j2n``  
+`mkdir mau-j2n`
 
-``cd mau-j2n``
+`cd mau-j2n`
 
 そのフォルダをGitで管理できるように、以下のコマンドを実行。
 
-``git init``
+`git init`
 
 問題がなかった場合、下記のような実行結果が出る。
 
@@ -246,7 +244,7 @@ Githubの画面左の「Create repository」ボタンもしくは、GitHubのヘ
 
 現在のブランチ名をmainに変更するため、コマンドを実行。
 
-``git branch -M main``
+`git branch -M main`
 
 GitHubの作成したリポジトリ画面を開き、「HTTPS/SSH」と書かれたボタンの「SSH」を押し、”git@github.com:shuhjitmau/mau-j2n.git”をコピーする。
 
@@ -258,11 +256,11 @@ GitHubの作成したリポジトリ画面を開き、「HTTPS/SSH」と書か�
 
 コピー後、以下のコマンドをターミナルで実行しpush先のリモートリポジトリを指定する。
 
-``git remote add origin git@github.com:shuhjitmau/mau-j2n.git``
+`git remote add origin git@github.com:shuhjitmau/mau-j2n.git`
 
 以下コマンドを実行すると、登録されているリモートリポジトリを確認することが可能。
 
-``git remote -v``
+`git remote -v`
 
 <img src="./image/gitwork005.png" alt="Github画面" width="50%">
 
@@ -273,7 +271,6 @@ Visual Studio Codeに下記の拡張機能をインストール
 「Japanese Language Pack for Visual Studio Code」
 「Live Preview」
 「markdownlint」
-
 
 Markdownの記法を調べながら、ドキュメントを作成。作業中にキャプチャを行った画像データも埋め込む。
 
@@ -289,15 +286,14 @@ https://qiita.com/tbpgr/items/989c6badefff69377da7
 
 
 ## git add 〜 git push（リモートリポジトリの更新）
-``` git add . ```
+` git add . `
 
 ` git commit -m "適宜コメントを入力" `
 
-``` git push origin main```
+` git push origin main`
 
 更新が無事行われているか、GitHubで確認。
 ※Visual Studio CodeのLivePreviewでは、ページ内のリンクがジャンプしなかったため、ある程度文章の更新を行う事に、リモートリポジトリ側のREAMME.mdの更新を行い確認を行った。
-
 
 # Markdownとは
 
@@ -312,6 +308,8 @@ Markdown（マークダウン）は、書を記述するための軽量マーク
 Markdownはシンプルな記法で文章に装飾を反映させると同時に構造化できる事ができ、レイアウトやスタイルを意識せず、文章を考えることだけに集中する事ができる点がメリットである。例えば見出しは「# 見出し」のように「#」+「半角スペース」で書き、「#」の数で見出しを５段階で表現することができる。
 
 # MEMO
+
+公開される事を考慮し、メールアドレスなどを表示しないように注意する。
 
 Git/GitHubの調査、環境構築の際に参考にしたURL
 
