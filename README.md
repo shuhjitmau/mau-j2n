@@ -315,35 +315,35 @@ Markdownはシンプルな記法で文章に装飾を反映させると同時に
 
 Git/GitHubの調査、環境構築の際に参考にしたURL
 
-■【Mac】Gitの環境構築をしよう！
+■【Mac】Gitの環境構築をしよう！  
 https://prog-8.com/docs/git-env
 
-■はじめてのGit！initコマンドでリポジトリを作成してみよう！
+■はじめてのGit！initコマンドでリポジトリを作成してみよう！  
 https://www.sejuku.net/blog/71268
 
-■Bitbucket Cloud での Git の使用方法
+■Bitbucket Cloud での Git の使用方法  
 https://www.atlassian.com/ja/git/tutorials/learn-git-with-bitbucket-cloud
 
-■Linux基本コマンドTips
+■Linux基本コマンドTips  
 https://atmarkit.itmedia.co.jp/ait/series/3065/
 
-■【絶対理解できる】Gitとは？特徴やできることまとめ！
+■【絶対理解できる】Gitとは？特徴やできることまとめ！  
 https://www.sejuku.net/blog/5756
 
-■【Git】基本コマンド
+■【Git】基本コマンド  
 https://qiita.com/konweb/items/621722f67fdd8f86a017
 
-■これでもう怖くない、Git／GitHubにおけるリモートリポジトリの作成、確認、変更、更新時の基本5コマンド
+■これでもう怖くない、Git／GitHubにおけるリモートリポジトリの作成、確認、変更、更新時の基本5コマンド  
 https://atmarkit.itmedia.co.jp/ait/articles/1701/24/news141.html
 
-■Git で自分のサーバー上にリモートレポジトリを作る方法
+■Git で自分のサーバー上にリモートレポジトリを作る方法  
 https://webbibouroku.com/Blog/Article/git-local-remote-repo
 
-■「Git・GitHub」の記事まとめ
+■「Git・GitHub」の記事まとめ  
 https://www.sejuku.net/blog/category/development-environment/git
 
-■stackoverflow
+■stackoverflow  
 https://ja.stackoverflow.com/
 
-■GitHub Docs
+■GitHub Docs  
 https://docs.github.com/ja
