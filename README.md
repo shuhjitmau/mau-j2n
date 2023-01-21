@@ -220,9 +220,14 @@ Githubの画面左の「Create repository」ボタンもしくは、GitHubのヘ
 
 # GithubへのREADME.mdの公開
 
-##　Gitのインストール
+README.md公開までの作業の流れ
 
-[RINKU](#Gitインストール)　
+[GitHubアカウントの作成](#GitHubアカウントの作成)　
+
+[Gitのインストールの実施](#Gitインストール)
+
+
+
 ここまで  
 ここまで  
 ここまで  
