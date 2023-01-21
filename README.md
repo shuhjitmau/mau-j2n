@@ -17,11 +17,11 @@ Git最大の特徴は「分散型」である事であり、ワーキングデ�
 # Gitインストール
 ターミナルから、下記のコマンドを実行。
 
- `` git --version `` 
+ ``` git --version ``` 
 
 以前、gitはインストールを行っていたが、実行したところ下記のエラーが表示された。
 
-`` xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun ``
+``` xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun ```
 
 原因を調査したところ、OSのバージョンアップを行った場合、このエラーが出ることがあるとあったので、再度「Xcode Command Line Tool」のインストールを実施。
 
