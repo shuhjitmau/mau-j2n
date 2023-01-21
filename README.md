@@ -222,7 +222,7 @@ Githubの画面左の「Create repository」ボタンもしくは、GitHubのヘ
 
 ##　Gitのインストール
 
-[LINK](#-Gitインストール)　
+[RINKU](#Gitインストール)　
 ここまで  
 ここまで  
 ここまで  
