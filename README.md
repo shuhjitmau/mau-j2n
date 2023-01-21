@@ -264,7 +264,7 @@ GitHubの作成したリポジトリ画面を開き、「HTTPS/SSH」と書か�
 
 <img src="./image/gitwork005.png" alt="Github画面" width="50%">
 
-## README.MDの作成
+## README.mdの作成
 
 「Visual Studio Code」で、README.mdの作成を行う。
 Visual Studio Codeに下記の拡張機能をインストール
