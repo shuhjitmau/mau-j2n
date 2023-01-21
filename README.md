@@ -220,7 +220,9 @@ Githubの画面左の「Create repository」ボタンもしくは、GitHubのヘ
 
 # GithubへのREADME.mdの公開
 
+##　Gitのインストール
 
+[LINK](#-Gitインストール)　
 ここまで  
 ここまで  
 ここまで  
