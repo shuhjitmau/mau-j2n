@@ -271,22 +271,18 @@ GitHubの作成したリポジトリ画面を開き、「HTTPS/SSH」と書か�
 README.MDの作成
 
 「Visual Studio Code」で、README.mdの作成を行う。
+
 Markdownの記法を調べながら、ドキュメントを作成。
+
 （参考にしたページ）
 
+Markdown記法/書き方（見出し・表・リンク・画像・文字色など）
 
 　https://notepm.jp/help/how-to-markdown
 
-![リンクのタイトル](https://notepm.jp/help/how-to-markdown)
+Markdown記法 サンプル集
 
-<p><a href="https://notepm.jp/help/how-to-markdown" target="_blank">アンカーテキスト</a></p>
-
-
-<a href="https://notepm.jp/help/how-to-markdown" target="_blank" rel="noopener noreferrer">Markdown記法/書き方（見出し・表・リンク・画像・文字色など）</a>
-
-
-　https://qiita.com/shizen-shin/items/a65f1e2b6a3c3a4a28e1
-
+https://qiita.com/tbpgr/items/989c6badefff69377da7
 
 
 
