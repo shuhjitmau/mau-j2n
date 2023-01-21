@@ -19,7 +19,7 @@ Git最大の特徴は「分散型」である事であり、ワーキングデ�
 
  ` git --version `
 
-以前、gitはインストールを行っていたが、実行したところ下記のエラーが表示された。
+以前、Gitはインストールを行っていたが、実行したところ下記のエラーが表示された。
 
 ` xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun `
 
@@ -200,7 +200,7 @@ GitHubのアップデートやお知らせを受け取るかどうかに「yes�
 
 ## リモートリポジトリの作成
 
-Githubの画面左の「Create repository」ボタンもしくは、GitHubのヘッダー右上にある「+」をクリックして表示される項目の「New repository」をクリック。
+GitHubの画面左の「Create repository」ボタンもしくは、GitHubのヘッダー右上にある「+」をクリックして表示される項目の「New repository」をクリック。
 
 <img src="./image/repository001.png" alt="Github画面" width="50%">
 
@@ -214,7 +214,7 @@ Githubの画面左の「Create repository」ボタンもしくは、GitHubのヘ
 
 <img src="./image/repository003.png" alt="Github画面" width="50%">
 
-# GithubへのREADME.mdの公開
+# GitHubへのREADME.mdの公開
 
 ## README.md公開までの作業の流れ
 
