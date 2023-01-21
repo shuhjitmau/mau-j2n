@@ -224,16 +224,13 @@ README.md公開までの作業の流れ
 
 [GitHubアカウントの作成](#GitHubアカウントの作成)　
 
+アカウントの登録〜リモートリポジトリの作成を実施
+
 [Gitのインストールの実施](#Gitインストール)
 
+[Gitのセットアップの実施](#Gitセットアップ)
 
-
-ここまで  
-ここまで  
-ここまで  
-ここまで  
-
-
+ユーザー名の設定〜SSH接続の確認までを実施
 
 ターミナルからGitで管理するディレクトリを作成し、ディレクトリに移動する。
 
@@ -271,6 +268,14 @@ GitHubの作成したリポジトリ画面を開き、「HTTPS/SSH」と書か�
 
 <img src="./image/gitwork005.png" alt="Github画面" width="50%">
 
+README.MDの作成
+
+「Visual Studio Code」で、README.mdの作成を行う。
+Markdownの記法を調べながら、ドキュメントを作成。
+（参考にしたページ）
+　https://notepm.jp/help/how-to-markdown
+
+　https://qiita.com/shizen-shin/items/a65f1e2b6a3c3a4a28e1
 
 
 
