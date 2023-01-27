@@ -292,7 +292,7 @@ https://qiita.com/tbpgr/items/989c6badefff69377da7
 
 ` git push origin main`
 
-更新が無事行われているか、GitHubで確認。
+更新が無事行われているか、GitHubで確認。  
 ※Visual Studio CodeのLivePreviewでは、ページ内のリンクがジャンプしなかったため、ある程度文章の更新を行う事に、リモートリポジトリ側のREAMME.mdの更新を行い確認を行った。
 
 # Markdownとは
