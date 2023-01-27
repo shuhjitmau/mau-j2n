@@ -37,8 +37,8 @@ Git最大の特徴は「分散型」である事であり、ワーキングデ�
 
 # Gitセットアップ
 
-Git は、アイデンティティによってコミットを関連付けるためにユーザ名を使用する。  
-※Git ユーザー名は、GitHub ユーザ名ーと同じではない点に注意。
+Gitは、アイデンティティによってコミットを関連付けるためにユーザ名を使用する。  
+※Gitユーザー名は、GitHub ユーザ名ーと同じではない点に注意。
 
 ## ユーザー名の設定
 
@@ -62,7 +62,7 @@ Git は、アイデンティティによってコミットを関連付けるた�
 
 ## GitからGitHubで認証する
 
-GitからGitHubリポジトリに接続する場合、HTTPSまたはSSHを使用し、GitHubで認証する必要がある。
+GitからGitHubリポジトリに接続する場合、HTTPSまたはSSHを使用し、GitHubで認証する必要がある。  
 ※以下の作業は、GitHubでリモートリポジトリ作成後に行う。
 
 ### GithubアカウントにSSHキーの追加
@@ -79,15 +79,15 @@ SSHキーファイルに書かれた内容をコピー。
 
 GitHubのヘッダー右上にあるプロフィール画像を押して、その中の「Settings（設定）」を押してください。
 
-<img src="./image/ssh001.png" alt="Github画面" width="50%">
+<img src="./image/ssh001.png" alt="GithubアカウントにSSHキーの追加" width="50%">
 
 左側のサイドメニューから、「SSH and GPG keys.」を押す。 
 
-<img src="./image/ssh002.png" alt="Github画面" width="50%">
+<img src="./image/ssh002.png" alt="GithubアカウントにSSHキーの追加" width="50%">
 
 次に「New SSH Key」を押す。
 
-<img src="./image/ssh003.png" alt="Github画面" width="50%">
+<img src="./image/ssh003.png" alt="GithubアカウントにSSHキーの追加" width="50%">
 
 Title欄に任意の名前を付け、Key欄に先ほどコピーした内容を貼り付ける。
 
@@ -98,7 +98,7 @@ GitHubに接続ができるかを確認。
 
 下記のようにユーザー名が表示されれば接続完了。
 
-<img src="./image/ssh004.png" alt="Github画面" width="50%">
+<img src="./image/ssh004.png" alt="SSH接続の確認" width="50%">
 
 # Gitの使い方
 
@@ -167,7 +167,7 @@ git push は、ローカルリポジトリの変更内容をリモートリポ�
 
 とコマンドを実行し、下記のようなメッセージが表示されればリモートリポジトリに反映されたことが確認できる。
 
-<img src="./image/gitwork007.png" alt="Github画面" width="50%">
+<img src="./image/gitwork007.png" alt="git push" width="50%">
 
 # GitHubとは
 
@@ -185,34 +185,34 @@ GitHubに作成されたリポジトリは、基本はパブリック設定で�
 
 ## アカウントの登録
 
-<img src="./image/github001.png" alt="Github画面" width="50%">
+<img src="./image/github001.png" alt="アカウントの登録" width="50%">
 
 「GitHubに登録する」ボタンを押し、アカウント登録画面へ
 新規登録用のフォームに、ユーザー名、メールアドレス、パスワードを入力。
 GitHubのアップデートやお知らせを受け取るかどうかに「yes」か「no」で回答。
-登録者がロボットではないことを確認する質問がありますので、質問の通りに回答。
+登録者がロボットではないことを確認する質問があるので、質問の通りに回答。
 
-<img src="./image/github003.png" alt="Github画面" width="50%">
+<img src="./image/github003.png" alt="アカウントの登録" width="50%">
 
-質問に正しく回答すると、登録したメールアドレス宛に認証コードが送られてくるので、
-コードを入力。
-<img src="./image/github004.png" alt="Github画面" width="50%">
+質問に正しく回答すると、登録したメールアドレス宛に認証コードが送られてくるので、コードを入力。
+
+<img src="./image/github004.png" alt="アカウントの登録" width="50%">
 
 ## リモートリポジトリの作成
 
 GitHubの画面左の「Create repository」ボタンもしくは、GitHubのヘッダー右上にある「+」をクリックして表示される項目の「New repository」をクリック。
 
-<img src="./image/repository001.png" alt="Github画面" width="50%">
+<img src="./image/repository001.png" alt="リモートリポジトリの作成" width="50%">
 
 「Repository name」の箇所にプロジェクト名「mau-j2n」と入力。
 また、今回は公開設定の為、「Public」を選択。
 その他の項目も必要に応じて入力し、リモートリポジトリを作成。
 
-<img src="./image/repository002.png" alt="Github画面" width="50%">
+<img src="./image/repository002.png" alt="リモートリポジトリの作成" width="50%">
 
 リモートリポジトリの作成が完了すると、下記のページが表示される。
 
-<img src="./image/repository003.png" alt="Github画面" width="50%">
+<img src="./image/repository003.png" alt="リモートリポジトリの作成" width="50%">
 
 # GitHubへのREADME.mdの公開
 
@@ -240,13 +240,13 @@ GitHubの画面左の「Create repository」ボタンもしくは、GitHubのヘ
 
 問題がなかった場合、下記のような実行結果が出る。
 
-<img src="./image/gitwork001.png" alt="Github画面" width="50%">
+<img src="./image/gitwork001.png" alt="git init" width="50%">
 
 現在のブランチ名をmainに変更するため、コマンドを実行。
 
 `git branch -M main`
 
-GitHubの作成したリポジトリ画面を開き、「HTTPS/SSH」と書かれたボタンの「SSH」を押し、”git@github.com:shuhjitmau/mau-j2n.git”をコピーする。
+GitHubで作成したリポジトリ画面を開き、「HTTPS/SSH」と書かれたボタンの「SSH」を押し、”git@github.com:shuhjitmau/mau-j2n.git”をコピーする。
 
 <img src="./image/gitwork002.png" alt="Github画面" width="50%">
 
@@ -262,7 +262,7 @@ GitHubの作成したリポジトリ画面を開き、「HTTPS/SSH」と書か�
 
 `git remote -v`
 
-<img src="./image/gitwork005.png" alt="Github画面" width="50%">
+<img src="./image/gitwork005.png" alt="確認画面" width="50%">
 
 ## README.mdの作成
 
